@@ -34,7 +34,7 @@ pod "SMNumberWheel"
 
 # Usage
 ## Adding to InterfaceBuilder
-after installing the pod:
+After installing the pod:
 - Add a view to the ViewController's view hierarchy using InterfaceBuilder
 - Setup constranits of the view
 - Set the view's class to be SMNumberWheel
