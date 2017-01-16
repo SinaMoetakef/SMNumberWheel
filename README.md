@@ -27,6 +27,13 @@ it, simply add the following line to your Podfile:
 pod "SMNumberWheel"
 ```
 
+## Demo links
+```link
+https://youtu.be/DIWpGOlDGOw
+https://youtu.be/NTEsCepLYBY
+https://youtu.be/r_eG3oPFMfk
+```
+
 # Usage
 ## Adding to InterfaceBuilder
 after installing the pod:
@@ -186,8 +193,8 @@ You can also set majorIndicatorType property directly in code.
 1 = IndicatorType.circular
 2 = IndicatorType.linearCenter
 3 = IndicatorType.linearInnerStroke
-3 = IndicatorType.linearOuterStroke
-4 = IndicatorType.diamond
+4 = IndicatorType.linearOuterStroke
+5 = IndicatorType.diamond
 */
 @IBInspectable open var majorIndType: Int
 /** Set size of major indicators. Set it to ZERO for automatic calculation. Default: 0.0  */
@@ -201,8 +208,8 @@ You can also set majorIndicatorType property directly in code.
 1 = IndicatorType.circular
 2 = IndicatorType.linearCenter
 3 = IndicatorType.linearInnerStroke
-3 = IndicatorType.linearOuterStroke
-4 = IndicatorType.diamond
+4 = IndicatorType.linearOuterStroke
+5 = IndicatorType.diamond
 */
 @IBInspectable open var minorIndType: Int 
 /** Set size of minor indicators. Set it to ZERO for automatic calculation. Default: 0.0 */
@@ -266,9 +273,6 @@ open func resetToDefaultValue()
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 
 ## Author
 
