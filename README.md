@@ -19,14 +19,6 @@ fraction digits accurate). The more rotation speed results in exponentially fast
 - Supports sounds and haptic feedbacks (iPhone 7 and iPhone 7+)
 - supports iOS 9.0 and above
 
-## Usage
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 SMNumberWheel is available through [CocoaPods](http://cocoapods.org). To install
@@ -35,6 +27,49 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "SMNumberWheel"
 ```
+
+# Usage
+## Adding to InterfaceBuilder
+- Add a view to your ViewController/View using InterfaceBuilder
+- Setup constranits of the view
+- Set the view's class to be SMNumberWheel
+- Wait for a moment for the InterfaceBuilder to render the wheel
+
+## Costumizing the Wheel
+- Have the view selected.
+- There are many properties available on Attributes Inspector section of the Interface Builder that you can change (Colors, Styles, Sizes, ...)
+
+## Connecting to code
+Like all other widgets, you can easily drag an outlet from the viewController to your code.
+In order to connect events, you can use either of the following methods:
+- Drag a target action from the viewController to your code and choose 'Value Changed' as event type
+- implement the delegate methods to get more events.
+`
+extension viewController : SMNumberWheelDelegate {
+func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
+
+}
+func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel) {
+
+}
+func SMNumberWheelReachedLimit(_ numberWheel: SMNumberWheel, stayedAtLimit: Bool) {
+
+}
+func SMNumberWheelStepperKeyPressed(_ numberWheel: SMNumberWheel, rightKey: Bool) {
+
+}
+func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool) {
+
+}
+}
+`
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
 
 ## Author
 
