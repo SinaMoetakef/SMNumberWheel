@@ -27,10 +27,10 @@ it, simply add the following line to your Podfile:
 pod "SMNumberWheel"
 ```
 
-## Demo links
-[Demo video] (https://youtu.be/DIWpGOlDGOw)
-[Customizing video] (https://youtu.be/NTEsCepLYBY)
-[Connecting to code video] (https://youtu.be/r_eG3oPFMfk)
+## Video links
+- [Demonstration] (https://youtu.be/DIWpGOlDGOw)
+- [Customizing the wheel] (https://youtu.be/NTEsCepLYBY)
+- [Connecting to code] (https://youtu.be/r_eG3oPFMfk)
 
 # Usage
 ## Adding to InterfaceBuilder
