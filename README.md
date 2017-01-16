@@ -42,9 +42,10 @@ pod "SMNumberWheel"
 ## Connecting to code
 Like all other widgets, you can easily drag an outlet from the viewController to your code.
 In order to connect events, you can use either of the following methods:
-- Drag a target action from the viewController to your code and choose 'Value Changed' as event type
+- Drag a target action from the viewController to your code and choose `Value Changed` as event type
 - implement the delegate methods to get more events.
-```
+
+```code
 extension viewController : SMNumberWheelDelegate {
 func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
 
