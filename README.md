@@ -44,7 +44,7 @@ Like all other widgets, you can easily drag an outlet from the viewController to
 - Drag a target action from the viewController to your code and choose `Value Changed` as event type
 - implement the delegate methods to get more events.
 
-```xcode
+```swift
 extension viewController : SMNumberWheelDelegate {
     func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
     }
