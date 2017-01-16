@@ -1,0 +1,16 @@
+PODS:
+  - SMNumberWheel (0.1.0)
+
+DEPENDENCIES:
+  - SMNumberWheel (from `../`)
+
+EXTERNAL SOURCES:
+  SMNumberWheel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SMNumberWheel: 1da4d1ea39426dab0965dae0750a890351248f91
+
+PODFILE CHECKSUM: 7fb44e9bc42630e38b1d6fbbedcccb8426fc4d04
+
+COCOAPODS: 1.0.0

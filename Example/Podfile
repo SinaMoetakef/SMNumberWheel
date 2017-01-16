@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SMNumberWheel_Example' do
+  pod 'SMNumberWheel', :path => '../'
+
+  target 'SMNumberWheel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

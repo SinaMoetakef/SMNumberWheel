@@ -1,0 +1,6 @@
+framework module SMNumberWheel {
+  umbrella header "SMNumberWheel-umbrella.h"
+
+  export *
+  module * { export * }
+}
