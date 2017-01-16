@@ -47,14 +47,20 @@ Like all other widgets, you can easily drag an outlet from the viewController to
 ```swift
 extension viewController : SMNumberWheelDelegate {
     func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
+        // Happens when the central button is tapped and the wheel is set to it's initial value
     }
     func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel) {
+        // Happens when the value of the wheel changes.
     }
     func SMNumberWheelReachedLimit(_ numberWheel: SMNumberWheel, stayedAtLimit: Bool) {
+        // Notifies the developer that the value of the wheel has reached one of the limits.
     }
     func SMNumberWheelStepperKeyPressed(_ numberWheel: SMNumberWheel, rightKey: Bool) {
+        // Notifies that a tap on one of the stepper keys is detected. 
+        // rightKey == true -> tapped on right key, otherwise tapped on the left key.
     }
     func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool) {
+        // Notifies the developer that the visual state of the wheel is changed (minimized or maximized).
     }
 }
 ```
