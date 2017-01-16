@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt1-DK-Rsl" customClass="SMNumberWheel" customModule="Pods_SMNumberWheel_Example">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt1-DK-Rsl" customClass="SMNumberWheel" customModule="SMNumberWheel">
                                 <rect key="frame" x="87" y="233" width="200" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -29,11 +29,23 @@
                                     <constraint firstAttribute="height" constant="200" id="iLW-DS-mso"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMNumberWheel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgp-ru-Sie">
+                                <rect key="frame" x="120" y="107" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="0uQ-su-uGd"/>
+                                    <constraint firstAttribute="height" constant="21" id="v3o-lK-6x1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vt1-DK-Rsl" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JRJ-m0-t93"/>
                             <constraint firstItem="Vt1-DK-Rsl" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Lr5-Vo-W50"/>
+                            <constraint firstItem="lgp-ru-Sie" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="87" id="fwn-sB-KKl"/>
+                            <constraint firstItem="lgp-ru-Sie" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hgk-Hy-fVr"/>
                         </constraints>
                     </view>
                 </viewController>
