@@ -28,11 +28,9 @@ pod "SMNumberWheel"
 ```
 
 ## Demo links
-```link
-https://youtu.be/DIWpGOlDGOw
-https://youtu.be/NTEsCepLYBY
-https://youtu.be/r_eG3oPFMfk
-```
+[Demo video] (https://youtu.be/DIWpGOlDGOw)
+[Customizing video] (https://youtu.be/NTEsCepLYBY)
+[Connecting to code video] (https://youtu.be/r_eG3oPFMfk)
 
 # Usage
 ## Adding to InterfaceBuilder
