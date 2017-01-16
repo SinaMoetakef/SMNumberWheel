@@ -40,28 +40,22 @@ pod "SMNumberWheel"
 - There are many properties available on Attributes Inspector section of the Interface Builder that you can change (Colors, Styles, Sizes, ...)
 
 ## Connecting to code
-Like all other widgets, you can easily drag an outlet from the viewController to your code.
-In order to connect events, you can use either of the following methods:
+Like all other widgets, you can easily drag an outlet from the viewController to your code. In order to connect events, you can use either of the following methods:
 - Drag a target action from the viewController to your code and choose `Value Changed` as event type
 - implement the delegate methods to get more events.
 
-```code
+```xcode
 extension viewController : SMNumberWheelDelegate {
-func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
-
-}
-func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel) {
-
-}
-func SMNumberWheelReachedLimit(_ numberWheel: SMNumberWheel, stayedAtLimit: Bool) {
-
-}
-func SMNumberWheelStepperKeyPressed(_ numberWheel: SMNumberWheel, rightKey: Bool) {
-
-}
-func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool) {
-
-}
+    func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel) {
+    }
+    func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel) {
+    }
+    func SMNumberWheelReachedLimit(_ numberWheel: SMNumberWheel, stayedAtLimit: Bool) {
+    }
+    func SMNumberWheelStepperKeyPressed(_ numberWheel: SMNumberWheel, rightKey: Bool) {
+    }
+    func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool) {
+    }
 }
 ```
 
