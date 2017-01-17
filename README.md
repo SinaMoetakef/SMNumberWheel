@@ -75,14 +75,14 @@ extension viewController : SMNumberWheelDelegate {
 ## Properties
 ```swift
 // ----- General Properties -----
-/** User different identifiers to identify different controls when using delegation. */
+/** Use different identifiers to identify different controls when using delegation. */
 @IBInspectable open var identifier: String = ""
-/** Sets lower limit (Minimum value) of the value. This is an optional value. Default: nil. */
+/** Sets lower limit (Minimum value) on the wheel. This is an optional value. Default: nil. */
 open var lowerLimit: Double?
-/** Sets upper limit (Maximum value) of the value. This is an optional value. Default: nil. */
+/** Sets upper limit (Maximum value) on the wheel. This is an optional value. Default: nil. */
 open var upperLimit: Double?
-/** Sets the sensitivity of Wheel. Higher values will result in faster value changings. 
-Set it to nil to let the system handle it.*/
+/** Sets the sensitivity of the Wheel. Higher values will result in faster value changings. 
+Set it to nil if you want the system to handle it automatically.*/
 open var sensitivity: Double?
 /** Describes the behavior of control when it's value reaches upper or lower limits. 
 Default: .stayAtLimit */
@@ -100,11 +100,11 @@ open var valueAsInt64: Int64
 @IBInspectable open var sounds: Bool
 /** Plays a haptic feedback when value changes on integers. 
 Available only on iOS 10 and above for iPhone 7, 7+ and later. default: false */
-@IBInspectable open var hapticFeedback
+@IBInspectable open var hapticFeedback: Bool
 /** By setting it to true all rotation animations and decelerations will be disabled. 
 default: false */
 @IBInspectable open var lockRotation: Bool
-/** Determine if the wheel should continue rotating and decelerating after user spins the wheel. 
+/** Determine if the wheel should continue rotating and decelerating after user lets go of the the wheel. 
 default: true */
 @IBInspectable open var decelerate: Bool
 /** Setting this property to false will eliminate bouncing back of the wheel, when it reaches a limit. 
@@ -166,7 +166,7 @@ open var labelColorStateHighlighted: UIColor?
 // ----- Stepper properties -----
 /** Set the visibility of steppers on top of the control. Default value: true */
 @IBInspectable open var stepper: Bool
-/** Amount of change in value when user presses stepper buttons. default: 1.0 */
+/** Amount of value change when user presses stepper buttons. default: 1.0 */
 @IBInspectable open var stepValue: Double
 /** Sets the color of steppers. Default: white color. This value is optional. */
 @IBInspectable open var stepperColor: UIColor?
@@ -180,13 +180,13 @@ open var stepperBackgroundColorStateHighlighted: UIColor?
 @IBInspectable open var stepperBorderColor: UIColor?
 
 // ----- Ring Indicators -----
-/** Set the outer Stroke Width for indicators. Default: 1.0 */
+/** Set the outer Stroke Width of indicators. Default: 1.0 */
 open var indicatorStroke: CGFloat
 /** Number of major indicators shown on the ring. Default: 4 */
 @IBInspectable open var majorIndicators: UInt
 /** 
 Type of major Indicators. Between 0 and 5. Default: 1 = circular. 
-You can also set majorIndicatorType property directly in code.
+You can also set majorIndicatorType property directly in code using IndicatorType enum.
 0 = IndicatorType.none
 1 = IndicatorType.circular
 2 = IndicatorType.linearCenter
@@ -195,13 +195,13 @@ You can also set majorIndicatorType property directly in code.
 5 = IndicatorType.diamond
 */
 @IBInspectable open var majorIndType: Int
-/** Set size of major indicators. Set it to ZERO for automatic calculation. Default: 0.0  */
+/** Set size of major indicators. Set it to 0.0 for automatic calculation. Default: 0.0  */
 @IBInspectable open var majorIndSize: CGFloat
 /** Number of minor indicators shown on the ring. Default: 12 */
 @IBInspectable open var minorIndicators: UInt
 /** 
 Type of minor Indicators. Between 0 and 5. Default: 1 = circular. 
-You can also set majorIndicatorType property directly in code. 
+You can also set majorIndicatorType property directly in code using IndicatorType enum. 
 0 = IndicatorType.none
 1 = IndicatorType.circular
 2 = IndicatorType.linearCenter
@@ -210,7 +210,7 @@ You can also set majorIndicatorType property directly in code.
 5 = IndicatorType.diamond
 */
 @IBInspectable open var minorIndType: Int 
-/** Set size of minor indicators. Set it to ZERO for automatic calculation. Default: 0.0 */
+/** Set size of minor indicators. Set it to 0.0 for automatic calculation. Default: 0.0 */
 @IBInspectable open var minorIndSize: CGFloat
 /** Set indicator color. Default: White color. This value is optional. */
 @IBInspectable open var indicatorColor: UIColor?
@@ -230,7 +230,7 @@ open var minorIndicatorType: IndicatorType
 open var majorIndicatorType: IndicatorType
 
 // ----- Delegate -----
-/** use his Delegate to connect this control to your code. 
+/** use this Delegate to connect this control to your code. 
 You should implement all methods of the protocol within receiver's class. */
 open weak var delegate: SMNumberWheelDelegate?
 

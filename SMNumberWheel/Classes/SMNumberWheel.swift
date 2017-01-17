@@ -66,7 +66,7 @@ public protocol SMNumberWheelDelegate: class {
     
     // MARK: NumberWheel Settings
     // ----------------------------------------------------------------------------
-    /** User different identifiers to identify different controls when using delegation. */
+    /** Use different identifiers to identify different controls when using delegation. */
     @IBInspectable open var identifier: String = ""
     /** Sets the Default value. If set outside of lower and upper limit ranges, it will extend the range in calculations. By default: 0.0 */
     fileprivate var defaultValue: Double? {
@@ -521,7 +521,7 @@ public protocol SMNumberWheelDelegate: class {
     
     // MARK: Wiring up (Delegation)
     // ----------------------------------------------------------------------------
-    /** use his Delegate to connect this control to your code. You should implement all methods of the protocol within receiver's class. */
+    /** use this Delegate to connect this control to your code. You should implement all methods of the protocol within receiver's class. */
     open weak var delegate: SMNumberWheelDelegate?
     
     // MARK: Overrided variables
