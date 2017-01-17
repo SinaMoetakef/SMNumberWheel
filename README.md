@@ -37,7 +37,7 @@ pod "SMNumberWheel"
 After installing the pod:
 - Add a view to the ViewController's view hierarchy using InterfaceBuilder
 - Setup constranits of the view
-- Set the view's class to be SMNumberWheel
+- Set the view's class to be SMNumberWheel and choose the ModuleName
 - Wait for the InterfaceBuilder to render the wheel
 
 ## Customizing the Wheel
