@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F89B1791E310FAE002F99D6 /* SMNumberWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F89B1781E310FAE002F99D6 /* SMNumberWheel.png */; };
 		604D160AEC9232187EB037D2 /* Pods_SMNumberWheel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615052D66826CD6E404BAFF4 /* Pods_SMNumberWheel_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		0A7355F2BA35AC33998B0491 /* Pods-SMNumberWheel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNumberWheel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMNumberWheel_Tests/Pods-SMNumberWheel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		17E116A26DD59D87BDDA4317 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3F89B1781E310FAE002F99D6 /* SMNumberWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SMNumberWheel.png; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SMNumberWheel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMNumberWheel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		607FACD21AFB9204008FA782 /* Example for SMNumberWheel */ = {
 			isa = PBXGroup;
 			children = (
+				3F89B1781E310FAE002F99D6 /* SMNumberWheel.png */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				B1684D961E30397B0087C467 /* ConstantsAndExtensions.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -256,6 +259,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				3F89B1791E310FAE002F99D6 /* SMNumberWheel.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
