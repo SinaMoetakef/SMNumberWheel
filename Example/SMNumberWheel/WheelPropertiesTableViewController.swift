@@ -62,6 +62,12 @@ class WheelPropertiesTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            self.updateUIComponentsFrom(wheel: wheel)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
