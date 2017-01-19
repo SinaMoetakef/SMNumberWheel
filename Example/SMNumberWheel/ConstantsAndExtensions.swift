@@ -11,3 +11,14 @@ import Foundation
 struct StoryboardsSegues {
     static let fromContainerViewToPropertiesVC = "FromContainerViewToPropertiesVC"
 }
+
+
+// MARK: String extensions
+extension String {
+    var doubleValue: Double? {
+        if let number = NumberFormatter().number(from: self) {
+            return number.doubleValue
+        }
+        return nil
+    }
+}

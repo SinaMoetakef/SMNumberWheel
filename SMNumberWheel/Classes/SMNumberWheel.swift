@@ -1579,7 +1579,7 @@ public protocol SMNumberWheelDelegate: class {
     }
     fileprivate func resetValueToInitial(shouldNotifyCallback: Bool) {
         if let defValue = self.defaultValue {
-            self.setToNewValue(defValue, shouldNotifyCallback: false)
+            self.setToNewValue(defValue, shouldNotifyCallback: shouldNotifyCallback)
             self.delegate?.SMNumberWheelDidResetToDefaultValue(self)
             if self.currentStringOnLabel != self.valueAsString {
                 self.updateLabelLayer()

@@ -24,6 +24,7 @@ class WheelPropertiesTableViewController: UITableViewController {
     @IBOutlet weak var upperLimitTextField: UITextField!
     @IBOutlet weak var behaviorOnLimitsSegment: UISegmentedControl!
     @IBOutlet weak var outputTypeSegment: UISegmentedControl!
+    @IBOutlet weak var outputPrecisionSegment: UISegmentedControl!
     
     @IBOutlet weak var lockRotationSwitch: UISwitch!
     @IBOutlet weak var decelerateSwitch: UISwitch!
@@ -245,7 +246,7 @@ class WheelPropertiesTableViewController: UITableViewController {
         wheel.stepper = false
     }
     private func updateUIComponentsFrom(wheel: SMNumberWheel) {
-        self.initialValueTextField.text = wheel.getDefaultValue() == nil ? "Not set" : "\(wheel.getDefaultValue()!)"
+        self.initialValueTextField.text = wheel.getDefaultValue() == nil ? nil : "\(wheel.getDefaultValue()!)"
         self.lowerLimitTextField.text = wheel.lowerLimit == nil ? "" : "\(wheel.lowerLimit!)"
         self.upperLimitTextField.text = wheel.upperLimit == nil ? "" : "\(wheel.upperLimit!)"
         self.behaviorOnLimitsSegment.selectedSegmentIndex = wheel.behaviorOnLimits.rawValue
@@ -311,6 +312,61 @@ class WheelPropertiesTableViewController: UITableViewController {
     }
     
     // Model Setup
+    @IBAction func dfaultValueEntered(_ sender: UITextField) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            if let defaultValue = sender.text?.doubleValue {
+                wheel.setDefaultValue(newValue: defaultValue)
+            } else {
+                wheel.setDefaultValue(newValue: nil)
+                sender.text = nil
+            }
+        }
+    }
+    @IBAction func lowerLimitEntered(_ sender: UITextField) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.lowerLimit = sender.text?.doubleValue
+            if sender.text?.doubleValue == nil {
+                sender.text = nil
+            }
+        }
+    }
+    @IBAction func upperLimitEntered(_ sender: UITextField) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.upperLimit = sender.text?.doubleValue
+            if sender.text?.doubleValue == nil {
+                sender.text = nil
+            }
+        }
+    }
+    @IBAction func behaviourOnLimitsChanged(_ sender: UISegmentedControl) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            switch sender.selectedSegmentIndex {
+            case 0:
+                wheel.behaviorOnLimits = .stayAtLimit
+            case 1:
+                wheel.behaviorOnLimits = .wrap
+            default:
+                wheel.behaviorOnLimits = .passLimit
+            }
+        }
+    }
+    @IBAction func outputTypeChanged(_ sender: UISegmentedControl) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            if sender.selectedSegmentIndex == 0 {
+                wheel.outputType = .integer
+                self.outputPrecisionSegment.selectedSegmentIndex = 0
+                self.outputPrecisionSegment.isEnabled = false
+            } else {
+                wheel.outputType = .floatingPoint(fractionDigits: UInt8(self.outputPrecisionSegment.selectedSegmentIndex+1))
+                self.outputPrecisionSegment.isEnabled = true
+            }
+        }
+    }
+    @IBAction func outputPrecisionChanged(_ sender: UISegmentedControl) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.outputType = .floatingPoint(fractionDigits: UInt8(sender.selectedSegmentIndex+1))
+        }
+    }
     
     // Ring
     
@@ -320,5 +376,9 @@ class WheelPropertiesTableViewController: UITableViewController {
     
     // Indicators
     
+    // Misc
+    @IBAction func returnButtonAction(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
     
 }

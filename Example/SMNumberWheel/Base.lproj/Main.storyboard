@@ -460,7 +460,7 @@ THE SOFTWARE.
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z79-WB-nwy">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z79-WB-nwy">
                                                     <rect key="frame" x="8" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="p9y-BC-Rri"/>
@@ -478,6 +478,10 @@ THE SOFTWARE.
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="dfaultValueEntered:" destination="ts1-lN-500" eventType="editingDidEnd" id="pEB-jN-1oE"/>
+                                                        <action selector="returnButtonAction:" destination="ts1-lN-500" eventType="editingDidEndOnExit" id="xSP-uX-dmQ"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -513,6 +517,10 @@ THE SOFTWARE.
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="lowerLimitEntered:" destination="ts1-lN-500" eventType="editingDidEnd" id="nJG-dQ-EWF"/>
+                                                        <action selector="returnButtonAction:" destination="ts1-lN-500" eventType="editingDidEndOnExit" id="g0Z-MS-9Ok"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -548,6 +556,10 @@ THE SOFTWARE.
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="returnButtonAction:" destination="ts1-lN-500" eventType="editingDidEndOnExit" id="P1o-gx-NcH"/>
+                                                        <action selector="upperLimitEntered:" destination="ts1-lN-500" eventType="editingDidEnd" id="rcr-2b-vCq"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -586,6 +598,9 @@ THE SOFTWARE.
                                                         <segment title="Wrap"/>
                                                         <segment title="Pass"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="behaviourOnLimitsChanged:" destination="ts1-lN-500" eventType="valueChanged" id="dpR-OV-B7L"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -623,6 +638,9 @@ THE SOFTWARE.
                                                         <segment title="Integer"/>
                                                         <segment title="Float"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="outputTypeChanged:" destination="ts1-lN-500" eventType="valueChanged" id="buI-EE-IWC"/>
+                                                    </connections>
                                                 </segmentedControl>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o1j-Gg-2xf">
                                                     <rect key="frame" x="126" y="43.5" width="241" height="29"/>
@@ -636,6 +654,9 @@ THE SOFTWARE.
                                                         <segment title="0.000"/>
                                                         <segment title="0.0000"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="outputPrecisionChanged:" destination="ts1-lN-500" eventType="valueChanged" id="D7M-Nw-N0o"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -903,6 +924,9 @@ THE SOFTWARE.
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="returnButtonAction:" destination="ts1-lN-500" eventType="editingDidEndOnExit" id="BmD-1w-UfO"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -1343,6 +1367,7 @@ THE SOFTWARE.
                         <outlet property="minorIndicatorTypeSegment" destination="8QA-Gi-Fo0" id="wuc-Mh-YbM"/>
                         <outlet property="minorIndicatorsLabel" destination="fOk-OY-Tth" id="RyN-zy-j2S"/>
                         <outlet property="minorIndicatorsStepper" destination="GyZ-Pq-V83" id="gXm-EF-zhc"/>
+                        <outlet property="outputPrecisionSegment" destination="o1j-Gg-2xf" id="QYU-aG-uAF"/>
                         <outlet property="outputTypeSegment" destination="0at-t3-6Ww" id="mGN-Ux-r3c"/>
                         <outlet property="ringWidthLabel" destination="nrW-be-KTM" id="H2Q-TK-cet"/>
                         <outlet property="ringWidthStepper" destination="BEU-Th-Bg3" id="CBw-7P-mbZ"/>

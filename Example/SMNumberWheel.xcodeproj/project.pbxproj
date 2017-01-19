@@ -15,7 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B1684D951E3037820087C467 /* WheelPropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1684D941E3037820087C467 /* WheelPropertiesTableViewController.swift */; };
-		B1684D971E30397B0087C467 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1684D961E30397B0087C467 /* Constants.swift */; };
+		B1684D971E30397B0087C467 /* ConstantsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1684D961E30397B0087C467 /* ConstantsAndExtensions.swift */; };
 		FF8592C42A3CBE2F38D63B34 /* Pods_SMNumberWheel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A7FE1664A7159E2C0EBF5C /* Pods_SMNumberWheel_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		79A7FE1664A7159E2C0EBF5C /* Pods_SMNumberWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMNumberWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8EBABE439EC526DC3690CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B1684D941E3037820087C467 /* WheelPropertiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelPropertiesTableViewController.swift; sourceTree = "<group>"; };
-		B1684D961E30397B0087C467 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B1684D961E30397B0087C467 /* ConstantsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsAndExtensions.swift; sourceTree = "<group>"; };
 		D5FFAF7C25B3DBDF55F6B7C7 /* Pods-SMNumberWheel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMNumberWheel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMNumberWheel_Example/Pods-SMNumberWheel_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,13 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				B1684D961E30397B0087C467 /* ConstantsAndExtensions.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				B1684D941E3037820087C467 /* WheelPropertiesTableViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				B1684D961E30397B0087C467 /* Constants.swift */,
 			);
 			name = "Example for SMNumberWheel";
 			path = SMNumberWheel;
@@ -370,7 +370,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				B1684D951E3037820087C467 /* WheelPropertiesTableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				B1684D971E30397B0087C467 /* Constants.swift in Sources */,
+				B1684D971E30397B0087C467 /* ConstantsAndExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
