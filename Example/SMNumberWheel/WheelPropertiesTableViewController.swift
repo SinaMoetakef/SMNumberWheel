@@ -369,12 +369,116 @@ class WheelPropertiesTableViewController: UITableViewController {
     }
     
     // Ring
+    @IBAction func lockRotationSwitchAction(_ sender: UISwitch) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.lockRotation = sender.isOn
+        }
+    }
+    @IBAction func decelerateSwitchAction(_ sender: UISwitch) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.decelerate = sender.isOn
+        }
+    }
+    @IBAction func ringWidthStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.ringWidth = CGFloat(sender.value)
+            if sender.value == 0 {
+                self.ringWidthLabel.text = "Auto"
+            } else {
+                self.ringWidthLabel.text = "\(sender.value)"
+            }
+        }
+    }
+    @IBAction func strokeWidthStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.ringStroke = CGFloat(sender.value)
+            self.strokeWidthLabel.text = "\(sender.value)"
+        }
+    }
     
     // Central Button
+    @IBAction func buttonEnabledSwitchAction(_ sender: UISwitch) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.buttonEnabled = sender.isOn
+        }
+    }
+    @IBAction func labelVisibleSwitchAction(_ sender: UISwitch) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.labelVisible = sender.isOn
+        }
+    }
+    @IBAction func labelTextEntered(_ sender: UITextField) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            var textToSet: String? = nil
+            if sender.text != nil && sender.text!.isEmpty == false {
+                textToSet = sender.text
+            }
+            wheel.centralLabelText = textToSet
+        }
+    }
+    @IBAction func fontSizeStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.fontSize = CGFloat(sender.value)
+            self.fontSizeLabel.text = "\(sender.value)"
+        }
+    }
     
     // Stepper
+    @IBAction func stepperSwitchAction(_ sender: UISwitch) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.stepper = sender.isOn
+        }
+    }
+    @IBAction func stepValueStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.stepValue = sender.value
+            self.stepValueLabel.text = "\(sender.value)"
+        }
+    }
     
     // Indicators
+    @IBAction func majoIndicatorStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.majorIndicators = UInt(sender.value)
+            self.majorIndicatorsLabel.text = "\(sender.value)"
+        }
+    }
+    @IBAction func majorIndicatorSizeStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.majorIndSize = CGFloat(sender.value)
+            if sender.value == 0 {
+                self.majorIndicatorSizeLabel.text = "Auto"
+            } else {
+                self.majorIndicatorSizeLabel.text = "\(sender.value)"
+            }
+        }
+    }
+    @IBAction func majorIndicatorTypeSegmentAction(_ sender: UISegmentedControl) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.majorIndType = sender.selectedSegmentIndex
+        }
+    }
+    @IBAction func minorIndicatorsStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.minorIndicators = UInt(sender.value)
+            self.minorIndicatorsLabel.text = "\(sender.value)"
+        }
+    }
+    @IBAction func minorIndicatorSizeStepperAction(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.minorIndSize = CGFloat(sender.value)
+            if sender.value == 0 {
+                self.minorIndicatorSizeLabel.text = "Auto"
+            } else {
+                self.minorIndicatorSizeLabel.text = "\(sender.value)"
+            }
+        }
+    }
+    @IBAction func minorIndicatorTypeSegmentAction(_ sender: UISegmentedControl) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.minorIndType = sender.selectedSegmentIndex
+        }
+    }
     
     // Misc
     @IBAction func returnButtonAction(_ sender: UITextField) {

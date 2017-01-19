@@ -696,6 +696,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="31" id="fpy-3K-0Wc"/>
                                                         <constraint firstAttribute="width" constant="49" id="nNd-QZ-D1R"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="lockRotationSwitchAction:" destination="ts1-lN-500" eventType="valueChanged" id="Re2-XL-WCY"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -729,6 +732,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="31" id="I8n-3r-eFV"/>
                                                         <constraint firstAttribute="width" constant="49" id="mM6-6Y-bxV"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="decelerateSwitchAction:" destination="ts1-lN-500" eventType="valueChanged" id="SrZ-CG-6CL"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -772,6 +778,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="width" constant="94" id="3WE-4T-Z7F"/>
                                                         <constraint firstAttribute="height" constant="29" id="NW0-el-SDi"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="ringWidthStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="qP4-rJ-NrT"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -817,6 +826,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="9uM-hB-oQu"/>
                                                         <constraint firstAttribute="width" constant="94" id="F2T-aT-Umk"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="strokeWidthStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="VIf-F0-BfC"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -856,6 +868,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="31" id="Kj4-Ip-srf"/>
                                                         <constraint firstAttribute="width" constant="49" id="TB1-XW-X4e"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="buttonEnabledSwitchAction:" destination="ts1-lN-500" eventType="valueChanged" id="fH8-1r-bD8"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -889,6 +904,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="31" id="VBD-S1-Jwe"/>
                                                         <constraint firstAttribute="width" constant="49" id="awU-aI-dus"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="labelVisibleSwitchAction:" destination="ts1-lN-500" eventType="valueChanged" id="fwC-dx-VSo"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -925,6 +943,7 @@ THE SOFTWARE.
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="labelTextEntered:" destination="ts1-lN-500" eventType="editingDidEnd" id="Mu7-50-Xpu"/>
                                                         <action selector="returnButtonAction:" destination="ts1-lN-500" eventType="editingDidEndOnExit" id="BmD-1w-UfO"/>
                                                     </connections>
                                                 </textField>
@@ -970,6 +989,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="0bp-K5-n5X"/>
                                                         <constraint firstAttribute="width" constant="94" id="BtM-0t-6KD"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="fontSizeStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="Vih-c6-avJ"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1009,6 +1031,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="width" constant="49" id="Ot2-10-D50"/>
                                                         <constraint firstAttribute="height" constant="31" id="qJ4-Qy-ft4"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="stepperSwitchAction:" destination="ts1-lN-500" eventType="valueChanged" id="Gzy-qR-lBn"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -1052,6 +1077,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="35E-4M-Xhc"/>
                                                         <constraint firstAttribute="width" constant="94" id="gSV-2n-ECL"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="stepValueStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="T9W-Qs-OaH"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1101,6 +1129,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="width" constant="94" id="ftZ-do-Eu1"/>
                                                         <constraint firstAttribute="height" constant="29" id="otf-IL-rqI"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="majoIndicatorStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="gmI-FQ-JL0"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1146,6 +1177,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="Qo7-ll-jpt"/>
                                                         <constraint firstAttribute="width" constant="94" id="Z6z-iT-JFf"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="majorIndicatorSizeStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="iLi-2d-mC4"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1188,6 +1222,9 @@ THE SOFTWARE.
                                                         <segment title=")  -)"/>
                                                         <segment title="◆"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="majorIndicatorTypeSegmentAction:" destination="ts1-lN-500" eventType="valueChanged" id="Ro5-qK-H9K"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
@@ -1236,6 +1273,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="HPp-2h-7gU"/>
                                                         <constraint firstAttribute="width" constant="94" id="mAh-Ce-OCY"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="minorIndicatorsStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="5dk-6x-WZ5"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1281,6 +1321,9 @@ THE SOFTWARE.
                                                         <constraint firstAttribute="height" constant="29" id="9po-NK-AkJ"/>
                                                         <constraint firstAttribute="width" constant="94" id="VuC-bO-sTm"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="minorIndicatorSizeStepperAction:" destination="ts1-lN-500" eventType="valueChanged" id="I2R-Oh-VZv"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -1323,6 +1366,9 @@ THE SOFTWARE.
                                                         <segment title=")  -)"/>
                                                         <segment title="◆"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="minorIndicatorTypeSegmentAction:" destination="ts1-lN-500" eventType="valueChanged" id="0PS-5F-SkG"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                             <constraints>
