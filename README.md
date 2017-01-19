@@ -36,14 +36,8 @@ pod "SMNumberWheel"
 - [Connecting to code] (https://youtu.be/r_eG3oPFMfk)
 
 # Usage
-## Adding to InterfaceBuilder
-After installing the pod:
-- Add a view to the ViewController's view hierarchy using InterfaceBuilder
-- Setup constranits of the view
-- Set the view's class to be SMNumberWheel and choose the ModuleName
-- Wait for the InterfaceBuilder to render the wheel
-
 ## Adding from code
+Sample code:
 ``` swift
 let wheel = SMNumberWheel(frame: CGRect(x: 100, y: 100, width: 180, height: 180))
 wheel.majorIndicators = 4
@@ -58,13 +52,20 @@ wheel.delegate = self
 self.view.addSubview(wheel)
 ```
 
-## Customizing the Wheel
+## Adding from InterfaceBuilder
+After installing the pod:
+- Add a view to the ViewController's view hierarchy using InterfaceBuilder
+- Setup constranits of the view
+- Set the view's class to be SMNumberWheel and choose the ModuleName
+- Wait for the InterfaceBuilder to render the wheel
+
+## Customizing the Wheel using InterfaceBuilder
 - Have the view selected.
 - Open Attributes Inspector section
 - Change properties available for the wheel like sizes, colors, styles, ...
 - The changes will be rendered in InterfaceBuilder.
 
-## Connecting to code
+## Connecting to code and receive events
 Like all other widgets, you can easily drag an `outlet` from the viewController to your code. In order to connect events, you can use either of the following methods:
 - Drag a target action from the viewController to your code and choose `Value Changed` as event type
 - implement the delegate methods to get more events.
