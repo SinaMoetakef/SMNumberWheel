@@ -11,6 +11,8 @@ SMNumberWheel is a custom made control (subclass of UIControl) for iOS, written 
 able to pick numbers very fast and and yet accurate. The wheel works with reading the angular speed of user's finger. The slower you spin the wheel, the more accurate values are changed (up to 4
 fraction digits accurate). The more rotation speed results in exponentially faster value changes.
 
+![alt tag] (https://github.com/SinaMoetakef/SMNumberWheel/blob/master/Example/SMNumberWheel/SMNumberWheel.png)
+
 ## Features
 - Highly customizable through properties which results in thousands of different designs.
 - Renders in InterfaceBuilder, has customizable properties visible with Attributes Inspector (InterfaceBuilder).
