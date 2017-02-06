@@ -2,6 +2,7 @@
 version: 1.0.0
 
 [![CI Status](http://img.shields.io/travis/Sina Moetakef/SMNumberWheel.svg?style=flat)](https://travis-ci.org/Sina Moetakef/SMNumberWheel)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SMNumberWheel.svg?style=flat)](http://cocoapods.org/pods/SMNumberWheel)
 [![License](https://img.shields.io/cocoapods/l/SMNumberWheel.svg?style=flat)](http://cocoapods.org/pods/SMNumberWheel)
 [![Platform](https://img.shields.io/cocoapods/p/SMNumberWheel.svg?style=flat)](http://cocoapods.org/pods/SMNumberWheel)
@@ -23,12 +24,34 @@ fraction digits accurate). The more rotation speed results in exponentially fast
 
 ## Installation
 
+### CocoaPods
+
 SMNumberWheel is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SMNumberWheel"
 ```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate SMNumberWheel into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "SinaMoetakef/SMNumberWheel"
+```
+
+Run `carthage update` to build the framework and drag the built `SMNumberWheel.framework` into your Xcode project.
+* don't forget the run-script!
 
 ## Video links
 - [Demonstration] (https://youtu.be/DIWpGOlDGOw)
