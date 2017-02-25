@@ -17,6 +17,8 @@ class WheelPropertiesTableViewController: UITableViewController {
     
     // properties - UI Components
     @IBOutlet weak var autoMinimizeSwitch: UISwitch!
+    @IBOutlet weak var autoMinimizeTimeLabel: UILabel!
+
     @IBOutlet weak var enabledSwitch: UISwitch!
     
     @IBOutlet weak var initialValueTextField: UITextField!
@@ -96,6 +98,14 @@ class WheelPropertiesTableViewController: UITableViewController {
             wheel.autoMinimize = sender.isOn
         }
     }
+
+    @IBAction func autoMinimizeTime(_ sender: UIStepper) {
+        if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
+            wheel.autoMinimizeTime = sender.value
+            self.autoMinimizeTimeLabel.text = "\(sender.value/1000) s"
+        }
+    }
+
     
     // Design Examples
     @IBAction func designExampleAction(_ sender: UISegmentedControl) {
