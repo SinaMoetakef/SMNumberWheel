@@ -142,7 +142,7 @@ public protocol SMNumberWheelDelegate: class {
         didSet {
             if self.autoMinimize == true {
                 if self.deceleration == false {
-                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
                 }
             } else {
                 if self.isEnabled == true { self.maximizeWheel() }
@@ -519,11 +519,11 @@ public protocol SMNumberWheelDelegate: class {
     fileprivate var autoMinimizeTimer: Timer = Timer()
     fileprivate var lastValue: Double = 0.0
 
-    @IBInspectable open var autoMinimizeTime: Double = 1500 {
+    @IBInspectable open var autoMinimizeTime: TimeInterval = 1.5 {
         didSet {
             if self.autoMinimize == true {
                 if self.deceleration == false {
-                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
                 }
             } else {
                 if self.isEnabled == true { self.maximizeWheel() }
@@ -804,7 +804,7 @@ public protocol SMNumberWheelDelegate: class {
         if self.deceleration == false {self.ringState = SMNumberWheelComponentState.normal}
         self.touchedComponent = nil
         if self.autoMinimize == true && self.deceleration == false {
-            self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+            self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
         }
     }
     

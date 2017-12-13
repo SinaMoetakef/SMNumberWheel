@@ -98,11 +98,10 @@ class WheelPropertiesTableViewController: UITableViewController {
             wheel.autoMinimize = sender.isOn
         }
     }
-
     @IBAction func autoMinimizeTime(_ sender: UIStepper) {
         if let wheel = self.delegate?.getDemoWheelFor(propertyViewController: self) {
             wheel.autoMinimizeTime = sender.value
-            self.autoMinimizeTimeLabel.text = "\(sender.value/1000) s"
+            self.autoMinimizeTimeLabel.text = "\(sender.value) s"
         }
     }
 
