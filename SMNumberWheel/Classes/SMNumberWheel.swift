@@ -1131,11 +1131,11 @@ public protocol SMNumberWheelDelegate: class {
         if maxTextWidth <= 1 { return 0.0 }
         var result = self.fontSize
         var font = UIFont.systemFont(ofSize: result)
-        var valueAttributes = [NSFontAttributeName: font]
-        while (labelText as NSString).size(attributes: valueAttributes).width > maxTextWidth {
+        var valueAttributes = [NSAttributedStringKey.font: font]
+        while (labelText as NSString).size(withAttributes: valueAttributes).width > maxTextWidth {
             result = result - 1
             font = UIFont.systemFont(ofSize: result)
-            valueAttributes = [NSFontAttributeName: font]
+            valueAttributes = [NSAttributedStringKey.font: font]
         }
         return result
     }
@@ -1277,8 +1277,8 @@ public protocol SMNumberWheelDelegate: class {
         let labelText = self.centralLabelText == nil ? self.valueAsString : self.centralLabelText!
         let properSize = self.properFontSizeForLabel()
         let font = UIFont.systemFont(ofSize: properSize)
-        let valueAttributes = [NSFontAttributeName: font]
-        let textSize = (self.valueAsString as NSString).size(attributes: valueAttributes)
+        let valueAttributes = [NSAttributedStringKey.font: font]
+        let textSize = (self.valueAsString as NSString).size(withAttributes: valueAttributes)
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         self.labelLayer.bounds = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: textSize.height)

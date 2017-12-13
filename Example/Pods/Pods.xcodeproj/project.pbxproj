@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		0CF7672B2367FBD5859F66D98C4DF343 /* Pods-SMNumberWheel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMNumberWheel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		13501E228A44A98ACB192349CC74582C /* Pods-SMNumberWheel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMNumberWheel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		20F67C3903DC7129F619192ECA0859DB /* Pods_SMNumberWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMNumberWheel_Tests.framework; path = "Pods-SMNumberWheel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F67C3903DC7129F619192ECA0859DB /* Pods_SMNumberWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMNumberWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		215FB40468283741DBEDF5DC163E4208 /* Pods-SMNumberWheel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMNumberWheel_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2F48786642B492FEE62D77F4D73ED3E7 /* Pods-SMNumberWheel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SMNumberWheel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4738CE6C0C4A2F190293790C606B4932 /* Pods-SMNumberWheel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SMNumberWheel_Example-resources.sh"; sourceTree = "<group>"; };
@@ -43,21 +43,21 @@
 		548BFC698A8F3D9495EEC23770694409 /* Pods-SMNumberWheel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SMNumberWheel_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		54F84C038214782BCC270A327861AC1C /* Pods-SMNumberWheel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SMNumberWheel_Example-umbrella.h"; sourceTree = "<group>"; };
 		78AC6A9C27AECE8946726DC025F9D749 /* Pods-SMNumberWheel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SMNumberWheel_Tests-resources.sh"; sourceTree = "<group>"; };
-		7E6192A673D9E6C32945653B54262F65 /* Pods_SMNumberWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SMNumberWheel_Example.framework; path = "Pods-SMNumberWheel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		801767828090C5484B5FF05A9A724331 /* Pods-SMNumberWheel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SMNumberWheel_Tests.modulemap"; sourceTree = "<group>"; };
+		7E6192A673D9E6C32945653B54262F65 /* Pods_SMNumberWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMNumberWheel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801767828090C5484B5FF05A9A724331 /* Pods-SMNumberWheel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SMNumberWheel_Tests.modulemap"; sourceTree = "<group>"; };
 		88C0D343EAFDF783BA4BDE1EC9E808F9 /* Pods-SMNumberWheel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMNumberWheel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8C9A13B07626B6D8E3C209F118FBA038 /* Pods-SMNumberWheel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMNumberWheel_Example-dummy.m"; sourceTree = "<group>"; };
 		8F004E7426DF4C26BC4C84936634BC37 /* Pods-SMNumberWheel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SMNumberWheel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9447E7E2DDCD605A04BE72A7C80C37A2 /* SMNumberWheel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMNumberWheel-umbrella.h"; sourceTree = "<group>"; };
-		99B934B8405BD94453AF4E8F1A52F243 /* SMNumberWheel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SMNumberWheel.modulemap; sourceTree = "<group>"; };
-		A695EE515FA4FA444493F71C9B5FC444 /* SMNumberWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMNumberWheel.framework; path = SMNumberWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B934B8405BD94453AF4E8F1A52F243 /* SMNumberWheel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SMNumberWheel.modulemap; sourceTree = "<group>"; };
+		A695EE515FA4FA444493F71C9B5FC444 /* SMNumberWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMNumberWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F63C21D4FA417F2127320982FE749E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71E22BC2A75ECD5372EA1F65389B6E9 /* Pods-SMNumberWheel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SMNumberWheel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B555547EC1CD51ABB40990B56575DC7A /* SMNumberWheel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMNumberWheel.swift; sourceTree = "<group>"; };
 		B687ABB703CC6B83A0199CFEA54BAF47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD8AC792F8801AF69B9CA9681631B57 /* SMNumberWheel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMNumberWheel-prefix.pch"; sourceTree = "<group>"; };
-		BB750DA040DC3D37EB4B5B00C4140859 /* Pods-SMNumberWheel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SMNumberWheel_Example.modulemap"; sourceTree = "<group>"; };
+		BB750DA040DC3D37EB4B5B00C4140859 /* Pods-SMNumberWheel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SMNumberWheel_Example.modulemap"; sourceTree = "<group>"; };
 		BEA11B334A5B5B8C1040D54B1281E48A /* Pods-SMNumberWheel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SMNumberWheel_Tests-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E0172DD42A491FA7990CC5A5A0534B9D /* SMNumberWheel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMNumberWheel-dummy.m"; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 			children = (
 				8F93973501587C7600F53B3DEA3CEC06 /* Classes */,
 			);
-			name = SMNumberWheel;
 			path = SMNumberWheel;
 			sourceTree = "<group>";
 		};
@@ -179,7 +178,6 @@
 			children = (
 				B555547EC1CD51ABB40990B56575DC7A /* SMNumberWheel.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -314,6 +312,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					99CB90D5FBBD654CBD68CCDFFEDB3E9E = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -512,7 +515,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -544,7 +548,8 @@
 				PRODUCT_NAME = SMNumberWheel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
