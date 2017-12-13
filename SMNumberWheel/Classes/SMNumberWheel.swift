@@ -9,7 +9,6 @@
 import UIKit
 import AudioToolbox
 
-
 public protocol SMNumberWheelDelegate: class {
     func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel)
     func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel)
@@ -18,8 +17,9 @@ public protocol SMNumberWheelDelegate: class {
     func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool)
 }
 
-@IBDesignable open class SMNumberWheel: UIControl {
-    
+@IBDesignable
+open class SMNumberWheel: UIControl {
+
     // MARK: enums
     /** Used to describe the behavior of control when reaching limits set by user. When a limit is reached the SMNumberWheelReachedLimit(...) from delegate will be called. */
     public enum BehaviorOnLimits: Int {
@@ -62,7 +62,7 @@ public protocol SMNumberWheelDelegate: class {
     }
     
     // MARK: properties
-    fileprivate let π: CGFloat = CGFloat(M_PI)
+    fileprivate let π: CGFloat = .pi
     
     // MARK: NumberWheel Settings
     // ----------------------------------------------------------------------------
