@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SMNumberWheel'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'SMNumberWheel is a subclass of UIControl written in Swift, which is ideal for picking numbers using a rotating wheel'
 
 # This description is used to generate tags and improve search results.
