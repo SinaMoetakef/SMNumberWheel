@@ -257,7 +257,7 @@ THE SOFTWARE.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C10-0e-txA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FgY-1O-kcw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1162" y="808"/>
+            <point key="canvasLocation" x="-1163" y="932"/>
         </scene>
         <!--Wheel Properties Table View Controller-->
         <scene sceneID="BtF-xo-YL0">
