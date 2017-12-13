@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -256,7 +257,7 @@ THE SOFTWARE.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C10-0e-txA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FgY-1O-kcw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1162" y="808"/>
+            <point key="canvasLocation" x="-1163" y="932"/>
         </scene>
         <!--Wheel Properties Table View Controller-->
         <scene sceneID="BtF-xo-YL0">
@@ -277,7 +278,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opJ-1J-w6X">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="3Rh-Vg-4HW"/>
                                                         <constraint firstAttribute="width" constant="110" id="K61-Vy-MeJ"/>
@@ -313,7 +314,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haptic feedbacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7q-Q4-Dpf">
-                                                    <rect key="frame" x="8" y="11.5" width="120" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="120" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5Oi-Bq-Hr1"/>
                                                         <constraint firstAttribute="width" constant="120" id="6tV-QH-Ojg"/>
@@ -349,7 +350,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s2-pq-txw">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="1qA-fc-0Fw"/>
                                                         <constraint firstAttribute="width" constant="110" id="KtJ-4R-pLC"/>
@@ -385,7 +386,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Minimize" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wh-Oy-Vru">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="LVK-gI-t5y"/>
                                                         <constraint firstAttribute="height" constant="21" id="XeW-iC-yAQ"/>
@@ -421,7 +422,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimize Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-3L-4iU">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="Ngd-Py-42V"/>
                                                         <constraint firstAttribute="height" constant="21" id="YGy-7B-ptD"/>
@@ -431,7 +432,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5 s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGd-6g-osj">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="JrK-cG-JWC"/>
                                                         <constraint firstAttribute="width" constant="70" id="paq-AW-OUg"/>
@@ -440,7 +441,7 @@ THE SOFTWARE.
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1500" maximumValue="3000" stepValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-Mx-8vG">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" maximumValue="5" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-Mx-8vG">
                                                     <rect key="frame" x="273" y="7.5" width="94" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="HMv-a6-dzX"/>
@@ -509,7 +510,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z79-WB-nwy">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="p9y-BC-Rri"/>
                                                         <constraint firstAttribute="width" constant="110" id="wbh-pq-5S1"/>
@@ -548,7 +549,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lower limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eS-ya-yxT">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="iCL-GL-YDo"/>
                                                         <constraint firstAttribute="width" constant="110" id="jKz-9J-RJf"/>
@@ -587,7 +588,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-o8-hpT">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="I11-0Y-7uB"/>
                                                         <constraint firstAttribute="height" constant="21" id="Mvu-PF-cWJ"/>
@@ -626,7 +627,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Limits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTX-ks-7cg">
-                                                    <rect key="frame" x="8" y="11.5" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="IGT-dG-Tgg"/>
                                                         <constraint firstAttribute="height" constant="21" id="c8O-Uy-EfV"/>
@@ -667,7 +668,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79V-yF-uRT">
-                                                    <rect key="frame" x="8" y="11" width="110" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="110" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VNo-8k-oLU"/>
                                                         <constraint firstAttribute="width" constant="110" id="YbW-3D-7kG"/>
@@ -691,7 +692,7 @@ THE SOFTWARE.
                                                     </connections>
                                                 </segmentedControl>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o1j-Gg-2xf">
-                                                    <rect key="frame" x="126" y="43.5" width="241" height="29"/>
+                                                    <rect key="frame" x="118" y="43.5" width="241" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="gqs-1u-INV"/>
                                                         <constraint firstAttribute="width" constant="241" id="zll-uz-ROh"/>
@@ -729,7 +730,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock Rotation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-yJ-BLG">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="GfI-mn-6UT"/>
                                                         <constraint firstAttribute="height" constant="21" id="NDE-Q5-o5M"/>
@@ -765,7 +766,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decelerate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-l8-4In">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="XuD-up-7io"/>
                                                         <constraint firstAttribute="width" constant="111" id="yoq-gt-40x"/>
@@ -801,7 +802,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ring width" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lof-d0-kLH">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5qS-hm-MjH"/>
                                                         <constraint firstAttribute="width" constant="111" id="eNF-iX-zhd"/>
@@ -811,7 +812,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrW-be-KTM">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="IiO-OH-HrA"/>
                                                         <constraint firstAttribute="width" constant="70" id="SQh-XP-0Rp"/>
@@ -849,7 +850,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stroke width" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irh-f3-Tde">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="7cn-bF-Mja"/>
                                                         <constraint firstAttribute="height" constant="21" id="qPv-kE-dxx"/>
@@ -859,7 +860,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie7-1N-ym6">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="NTV-WQ-2gb"/>
                                                         <constraint firstAttribute="width" constant="70" id="iWz-KJ-uCI"/>
@@ -901,7 +902,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button enabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZc-YX-ciK">
-                                                    <rect key="frame" x="13" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="21" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Hkz-4A-lLk"/>
                                                         <constraint firstAttribute="width" constant="111" id="quR-FN-vee"/>
@@ -937,7 +938,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label visible" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-yX-aN0">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="82p-5i-eZT"/>
                                                         <constraint firstAttribute="height" constant="21" id="uaG-Sg-dXw"/>
@@ -973,7 +974,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPT-c3-GhB">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="03z-OT-MQh"/>
                                                         <constraint firstAttribute="height" constant="21" id="RMp-dL-hrj"/>
@@ -1012,7 +1013,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM4-y1-qz3">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="1ll-pl-VXI"/>
                                                         <constraint firstAttribute="width" constant="111" id="naA-Wj-FwV"/>
@@ -1022,7 +1023,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kO-NE-DA9">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="aik-Wb-rVi"/>
                                                         <constraint firstAttribute="width" constant="70" id="vNf-sl-9zL"/>
@@ -1064,7 +1065,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o55-RP-Njl">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="LMS-wx-cX4"/>
                                                         <constraint firstAttribute="height" constant="21" id="P9g-F6-Z5M"/>
@@ -1100,7 +1101,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuW-pi-PFW">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="VGn-R9-bVK"/>
                                                         <constraint firstAttribute="height" constant="21" id="kJ5-3Q-Nce"/>
@@ -1110,7 +1111,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjV-5R-ZCX">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="3ot-oi-YeA"/>
                                                         <constraint firstAttribute="height" constant="21" id="epV-dZ-bOu"/>
@@ -1152,7 +1153,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major indicators" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVf-T2-hJT">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Qcg-Px-vAN"/>
                                                         <constraint firstAttribute="width" constant="111" id="ws9-aC-tRi"/>
@@ -1162,7 +1163,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8I-KF-hjZ">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="imu-xO-0CY"/>
                                                         <constraint firstAttribute="height" constant="21" id="jPB-Ec-ddk"/>
@@ -1200,7 +1201,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1E-S4-WSt">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="GuD-av-AIb"/>
                                                         <constraint firstAttribute="height" constant="21" id="mbL-12-WLK"/>
@@ -1210,7 +1211,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EW-CQ-r8X">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="V7D-H2-TrE"/>
                                                         <constraint firstAttribute="width" constant="70" id="xqn-dA-vbo"/>
@@ -1248,7 +1249,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-1V-Ros">
-                                                    <rect key="frame" x="8" y="11.5" width="36" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="36" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="36" id="Hqd-iT-Idf"/>
                                                         <constraint firstAttribute="height" constant="21" id="cGS-Yq-6OR"/>
@@ -1258,7 +1259,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D6R-kN-k4f">
-                                                    <rect key="frame" x="59" y="8.5" width="308" height="29"/>
+                                                    <rect key="frame" x="67" y="8.5" width="300" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="9n8-PX-OU0"/>
                                                     </constraints>
@@ -1296,7 +1297,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor indicators" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-My-act">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="PUX-eu-ONe"/>
                                                         <constraint firstAttribute="width" constant="111" id="SmD-Ea-ub6"/>
@@ -1306,7 +1307,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-OY-Tth">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Y8z-c5-MRF"/>
                                                         <constraint firstAttribute="width" constant="70" id="iyZ-XF-j17"/>
@@ -1344,7 +1345,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-lb-ylg">
-                                                    <rect key="frame" x="8" y="11.5" width="111" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="111" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="3df-gZ-Eco"/>
                                                         <constraint firstAttribute="width" constant="111" id="aeE-oz-xUi"/>
@@ -1354,7 +1355,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1n-su-vAq">
-                                                    <rect key="frame" x="127" y="11.5" width="70" height="21"/>
+                                                    <rect key="frame" x="135" y="11.5" width="70" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="7Sd-ak-8tM"/>
                                                         <constraint firstAttribute="height" constant="21" id="b74-pU-LrW"/>
@@ -1392,7 +1393,7 @@ THE SOFTWARE.
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqY-gN-YqR">
-                                                    <rect key="frame" x="8" y="11.5" width="36" height="21"/>
+                                                    <rect key="frame" x="16" y="11.5" width="36" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="8MR-Qg-dzM"/>
                                                         <constraint firstAttribute="width" constant="36" id="oAv-dQ-cQo"/>
@@ -1402,7 +1403,7 @@ THE SOFTWARE.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8QA-Gi-Fo0">
-                                                    <rect key="frame" x="59" y="8.5" width="308" height="29"/>
+                                                    <rect key="frame" x="67" y="8.5" width="300" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="SDe-xv-TD9"/>
                                                     </constraints>

@@ -9,7 +9,6 @@
 import UIKit
 import AudioToolbox
 
-
 public protocol SMNumberWheelDelegate: class {
     func SMNumberWheelDidResetToDefaultValue(_ numberWheel: SMNumberWheel)
     func SMNumberWheelValueChanged(_ numberWheel: SMNumberWheel)
@@ -18,8 +17,9 @@ public protocol SMNumberWheelDelegate: class {
     func SMNumberWheelChangedAppearance(_ numberWheel: SMNumberWheel, minimized: Bool)
 }
 
-@IBDesignable open class SMNumberWheel: UIControl {
-    
+@IBDesignable
+open class SMNumberWheel: UIControl {
+
     // MARK: enums
     /** Used to describe the behavior of control when reaching limits set by user. When a limit is reached the SMNumberWheelReachedLimit(...) from delegate will be called. */
     public enum BehaviorOnLimits: Int {
@@ -62,7 +62,7 @@ public protocol SMNumberWheelDelegate: class {
     }
     
     // MARK: properties
-    fileprivate let π: CGFloat = CGFloat(M_PI)
+    fileprivate let π: CGFloat = .pi
     
     // MARK: NumberWheel Settings
     // ----------------------------------------------------------------------------
@@ -142,7 +142,7 @@ public protocol SMNumberWheelDelegate: class {
         didSet {
             if self.autoMinimize == true {
                 if self.deceleration == false {
-                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
                 }
             } else {
                 if self.isEnabled == true { self.maximizeWheel() }
@@ -519,11 +519,11 @@ public protocol SMNumberWheelDelegate: class {
     fileprivate var autoMinimizeTimer: Timer = Timer()
     fileprivate var lastValue: Double = 0.0
 
-    @IBInspectable open var autoMinimizeTime: Double = 1500 {
+    @IBInspectable open var autoMinimizeTime: TimeInterval = 1.5 {
         didSet {
             if self.autoMinimize == true {
                 if self.deceleration == false {
-                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+                    self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
                 }
             } else {
                 if self.isEnabled == true { self.maximizeWheel() }
@@ -804,7 +804,7 @@ public protocol SMNumberWheelDelegate: class {
         if self.deceleration == false {self.ringState = SMNumberWheelComponentState.normal}
         self.touchedComponent = nil
         if self.autoMinimize == true && self.deceleration == false {
-            self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime / 1000, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
+            self.autoMinimizeTimer =  Timer.scheduledTimer(timeInterval: self.autoMinimizeTime, target: self, selector: #selector(SMNumberWheel.minimizeWheel), userInfo: nil, repeats: false)
         }
     }
     
@@ -1131,11 +1131,11 @@ public protocol SMNumberWheelDelegate: class {
         if maxTextWidth <= 1 { return 0.0 }
         var result = self.fontSize
         var font = UIFont.systemFont(ofSize: result)
-        var valueAttributes = [NSFontAttributeName: font]
-        while (labelText as NSString).size(attributes: valueAttributes).width > maxTextWidth {
+        var valueAttributes = [NSAttributedStringKey.font: font]
+        while (labelText as NSString).size(withAttributes: valueAttributes).width > maxTextWidth {
             result = result - 1
             font = UIFont.systemFont(ofSize: result)
-            valueAttributes = [NSFontAttributeName: font]
+            valueAttributes = [NSAttributedStringKey.font: font]
         }
         return result
     }
@@ -1277,8 +1277,8 @@ public protocol SMNumberWheelDelegate: class {
         let labelText = self.centralLabelText == nil ? self.valueAsString : self.centralLabelText!
         let properSize = self.properFontSizeForLabel()
         let font = UIFont.systemFont(ofSize: properSize)
-        let valueAttributes = [NSFontAttributeName: font]
-        let textSize = (self.valueAsString as NSString).size(attributes: valueAttributes)
+        let valueAttributes = [NSAttributedStringKey.font: font]
+        let textSize = (self.valueAsString as NSString).size(withAttributes: valueAttributes)
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         self.labelLayer.bounds = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: textSize.height)
